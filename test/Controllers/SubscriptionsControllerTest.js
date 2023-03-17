@@ -29,6 +29,7 @@ const CreateSubscriptionItemRequest = testerlib.CreateSubscriptionItemRequest;
 const UpdateSubscriptionItemRequest = testerlib.UpdateSubscriptionItemRequest;
 const ListSubscriptionsResponse = testerlib.ListSubscriptionsResponse;
 const CreateSubscriptionRequest = testerlib.CreateSubscriptionRequest;
+const CreateCancelSubscriptionRequest = testerlib.CreateCancelSubscriptionRequest;
 const GetIncrementResponse = testerlib.GetIncrementResponse;
 const CreateIncrementRequest = testerlib.CreateIncrementRequest;
 const UpdateSubscriptionAffiliationIdRequest = testerlib.UpdateSubscriptionAffiliationIdRequest;
