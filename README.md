@@ -358,8 +358,8 @@ function getUsages(subscriptionId, itemId, page, size, code, group, usedSince, u
 
     var subscriptionId = subscription_id;
     var itemId = item_id;
-    var page = 131;
-    var size = 131;
+    var page = 31;
+    var size = 31;
     var code = 'code';
     var group = 'group';
     var usedSince = date("D M d, Y G:i");
@@ -552,8 +552,8 @@ function getSubscriptionItems(subscriptionId, page, size, name, code, status, de
 ```javascript
 
     var subscriptionId = subscription_id;
-    var page = 131;
-    var size = 131;
+    var page = 31;
+    var size = 31;
     var name = 'name';
     var code = 'code';
     var status = 'status';
@@ -750,8 +750,8 @@ function getSubscriptions(page, size, code, billingType, customerId, planId, car
 
 ```javascript
 
-    var page = 131;
-    var size = 131;
+    var page = 31;
+    var size = 31;
     var code = 'code';
     var billingType = billing_type;
     var customerId = customer_id;
@@ -833,7 +833,7 @@ function createSubscription(body, idempotencyKey, callback)
 
 
 ```javascript
-function cancelSubscription(subscriptionId, idempotencyKey, callback)
+function cancelSubscription(subscriptionId, idempotencyKey, body, callback)
 ```
 #### Parameters
 
@@ -841,6 +841,7 @@ function cancelSubscription(subscriptionId, idempotencyKey, callback)
 |-----------|------|-------------|
 | subscriptionId |  ``` Required ```  | Subscription id |
 | idempotencyKey |  ``` Optional ```  | TODO: Add a parameter description |
+| body |  ``` Optional ```  | Request for cancelling a subscription |
 
 
 
@@ -850,8 +851,9 @@ function cancelSubscription(subscriptionId, idempotencyKey, callback)
 
     var subscriptionId = subscription_id;
     var idempotencyKey = 'idempotency-key';
+    var body = new CreateCancelSubscriptionRequest({"key":"value"});
 
-    controller.cancelSubscription(subscriptionId, idempotencyKey, function(error, response, context) {
+    controller.cancelSubscription(subscriptionId, idempotencyKey, body, function(error, response, context) {
 
     
     });
@@ -1298,8 +1300,8 @@ function getDiscounts(subscriptionId, page, size, callback)
 ```javascript
 
     var subscriptionId = subscription_id;
-    var page = 131;
-    var size = 131;
+    var page = 31;
+    var size = 31;
 
     controller.getDiscounts(subscriptionId, page, size, function(error, response, context) {
 
@@ -1436,8 +1438,8 @@ function getIncrements(subscriptionId, page, size, callback)
 ```javascript
 
     var subscriptionId = subscription_id;
-    var page = 131;
-    var size = 131;
+    var page = 31;
+    var size = 31;
 
     controller.getIncrements(subscriptionId, page, size, function(error, response, context) {
 
@@ -1813,8 +1815,8 @@ function getOrders(page, size, code, status, createdSince, createdUntil, custome
 
 ```javascript
 
-    var page = 131;
-    var size = 131;
+    var page = 31;
+    var size = 31;
     var code = 'code';
     var status = 'status';
     var createdSince = date("D M d, Y G:i");
@@ -2691,8 +2693,8 @@ function getPlans(page, size, name, status, billingType, createdSince, createdUn
 
 ```javascript
 
-    var page = 222;
-    var size = 222;
+    var page = 31;
+    var size = 31;
     var name = 'name';
     var status = 'status';
     var billingType = billing_type;
@@ -2983,8 +2985,8 @@ function getInvoices(page, size, code, customerId, subscriptionId, createdSince,
 
 ```javascript
 
-    var page = 222;
-    var size = 222;
+    var page = 31;
+    var size = 31;
     var code = 'code';
     var customerId = customer_id;
     var subscriptionId = subscription_id;
@@ -3508,8 +3510,8 @@ function getAccessTokens(customerId, page, size, callback)
 ```javascript
 
     var customerId = customer_id;
-    var page = 222;
-    var size = 222;
+    var page = 31;
+    var size = 31;
 
     controller.getAccessTokens(customerId, page, size, function(error, response, context) {
 
@@ -3600,8 +3602,8 @@ function getAddresses(customerId, page, size, callback)
 ```javascript
 
     var customerId = customer_id;
-    var page = 222;
-    var size = 222;
+    var page = 31;
+    var size = 31;
 
     controller.getAddresses(customerId, page, size, function(error, response, context) {
 
@@ -3830,8 +3832,8 @@ function getCards(customerId, page, size, callback)
 ```javascript
 
     var customerId = customer_id;
-    var page = 222;
-    var size = 222;
+    var page = 31;
+    var size = 31;
 
     controller.getCards(customerId, page, size, function(error, response, context) {
 
@@ -4206,8 +4208,8 @@ function getChargeTransactions(chargeId, page, size, callback)
 ```javascript
 
     var chargeId = charge_id;
-    var page = 222;
-    var size = 222;
+    var page = 31;
+    var size = 31;
 
     controller.getChargeTransactions(chargeId, page, size, function(error, response, context) {
 
@@ -4303,8 +4305,8 @@ function getCharges(page, size, code, status, paymentMethod, customerId, orderId
 
 ```javascript
 
-    var page = 222;
-    var size = 222;
+    var page = 31;
+    var size = 31;
     var code = 'code';
     var status = 'status';
     var paymentMethod = payment_method;
@@ -4427,7 +4429,7 @@ function getCharge(chargeId, callback)
 
 
 ```javascript
-function cancelCharge(chargeId, idempotencyKey, callback)
+function cancelCharge(chargeId, idempotencyKey, body, callback)
 ```
 #### Parameters
 
@@ -4435,6 +4437,7 @@ function cancelCharge(chargeId, idempotencyKey, callback)
 |-----------|------|-------------|
 | chargeId |  ``` Required ```  | Charge id |
 | idempotencyKey |  ``` Optional ```  | TODO: Add a parameter description |
+| body |  ``` Optional ```  | Request for cancelling a charge |
 
 
 
@@ -4444,8 +4447,9 @@ function cancelCharge(chargeId, idempotencyKey, callback)
 
     var chargeId = charge_id;
     var idempotencyKey = 'idempotency-key';
+    var body = new CreateCancelChargeRequest({"key":"value"});
 
-    controller.cancelCharge(chargeId, idempotencyKey, function(error, response, context) {
+    controller.cancelCharge(chargeId, idempotencyKey, body, function(error, response, context) {
 
     
     });
@@ -4864,8 +4868,8 @@ function getAnticipations(recipientId, page, size, status, timeframe, paymentDat
 ```javascript
 
     var recipientId = recipient_id;
-    var page = 222;
-    var size = 222;
+    var page = 31;
+    var size = 31;
     var status = 'status';
     var timeframe = 'timeframe';
     var paymentDateSince = date("D M d, Y G:i");
@@ -4960,8 +4964,8 @@ function getRecipients(page, size, callback)
 
 ```javascript
 
-    var page = 222;
-    var size = 222;
+    var page = 244;
+    var size = 244;
 
     controller.getRecipients(page, size, function(error, response, context) {
 
@@ -5189,8 +5193,8 @@ function getTransfers(recipientId, page, size, status, createdSince, createdUnti
 ```javascript
 
     var recipientId = recipient_id;
-    var page = 222;
-    var size = 222;
+    var page = 244;
+    var size = 244;
     var status = 'status';
     var createdSince = date("D M d, Y G:i");
     var createdUntil = date("D M d, Y G:i");
@@ -5331,8 +5335,8 @@ function getWithdrawals(recipientId, page, size, status, createdSince, createdUn
 ```javascript
 
     var recipientId = recipient_id;
-    var page = 222;
-    var size = 222;
+    var page = 244;
+    var size = 244;
     var status = 'status';
     var createdSince = date("D M d, Y G:i");
     var createdUntil = date("D M d, Y G:i");

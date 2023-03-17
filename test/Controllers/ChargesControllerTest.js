@@ -23,6 +23,7 @@ const ListChargeTransactionsResponse = testerlib.ListChargeTransactionsResponse;
 const UpdateChargeDueDateRequest = testerlib.UpdateChargeDueDateRequest;
 const ListChargesResponse = testerlib.ListChargesResponse;
 const UpdateChargeCardRequest = testerlib.UpdateChargeCardRequest;
+const CreateCancelChargeRequest = testerlib.CreateCancelChargeRequest;
 const GetChargesSummaryResponse = testerlib.GetChargesSummaryResponse;
 const CreateChargeRequest = testerlib.CreateChargeRequest;
 const CreateConfirmPaymentRequest = testerlib.CreateConfirmPaymentRequest;
