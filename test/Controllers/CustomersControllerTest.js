@@ -16,21 +16,21 @@ const baseController = require("../../lib/Controllers/BaseController");
 
 const controller = testerlib.CustomersController;
 const GetCardResponse = testerlib.GetCardResponse;
-const UpdateCardRequest = testerlib.UpdateCardRequest;
 const GetAddressResponse = testerlib.GetAddressResponse;
 const UpdateAddressRequest = testerlib.UpdateAddressRequest;
+const ListAccessTokensResponse = testerlib.ListAccessTokensResponse;
+const GetCustomerResponse = testerlib.GetCustomerResponse;
+const UpdateCustomerRequest = testerlib.UpdateCustomerRequest;
+const ListCustomersResponse = testerlib.ListCustomersResponse;
+const UpdateCardRequest = testerlib.UpdateCardRequest;
 const GetAccessTokenResponse = testerlib.GetAccessTokenResponse;
 const CreateAccessTokenRequest = testerlib.CreateAccessTokenRequest;
-const ListAccessTokensResponse = testerlib.ListAccessTokensResponse;
 const CreateAddressRequest = testerlib.CreateAddressRequest;
-const ListAddressesResponse = testerlib.ListAddressesResponse;
-const GetCustomerResponse = testerlib.GetCustomerResponse;
-const CreateCustomerRequest = testerlib.CreateCustomerRequest;
-const ListCustomersResponse = testerlib.ListCustomersResponse;
-const CreateCardRequest = testerlib.CreateCardRequest;
 const ListCardsResponse = testerlib.ListCardsResponse;
-const UpdateCustomerRequest = testerlib.UpdateCustomerRequest;
 const UpdateMetadataRequest = testerlib.UpdateMetadataRequest;
+const ListAddressesResponse = testerlib.ListAddressesResponse;
+const CreateCustomerRequest = testerlib.CreateCustomerRequest;
+const CreateCardRequest = testerlib.CreateCardRequest;
 
 describe("CustomersController Tests", function tests() {
     this.timeout(testConfiguration.TEST_TIMEOUT);

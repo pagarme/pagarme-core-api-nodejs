@@ -20,9 +20,9 @@ const GetOrderResponse = testerlib.GetOrderResponse;
 const CreateOrderRequest = testerlib.CreateOrderRequest;
 const GetOrderItemResponse = testerlib.GetOrderItemResponse;
 const CreateOrderItemRequest = testerlib.CreateOrderItemRequest;
+const UpdateMetadataRequest = testerlib.UpdateMetadataRequest;
 const UpdateOrderItemRequest = testerlib.UpdateOrderItemRequest;
 const UpdateOrderStatusRequest = testerlib.UpdateOrderStatusRequest;
-const UpdateMetadataRequest = testerlib.UpdateMetadataRequest;
 
 describe("OrdersController Tests", function tests() {
     this.timeout(testConfiguration.TEST_TIMEOUT);
