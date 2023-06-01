@@ -15,9 +15,9 @@ const testConfiguration = require("../TestBootstrap");
 const baseController = require("../../lib/Controllers/BaseController");
 
 const controller = testerlib.TransfersController;
-const ListTransfers = testerlib.ListTransfers;
 const GetTransfer = testerlib.GetTransfer;
 const CreateTransfer = testerlib.CreateTransfer;
+const ListTransfers = testerlib.ListTransfers;
 
 describe("TransfersController Tests", function tests() {
     this.timeout(testConfiguration.TEST_TIMEOUT);
