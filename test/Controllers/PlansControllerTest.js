@@ -16,13 +16,13 @@ const baseController = require("../../lib/Controllers/BaseController");
 
 const controller = testerlib.PlansController;
 const GetPlanResponse = testerlib.GetPlanResponse;
-const UpdatePlanRequest = testerlib.UpdatePlanRequest;
-const UpdateMetadataRequest = testerlib.UpdateMetadataRequest;
-const GetPlanItemResponse = testerlib.GetPlanItemResponse;
-const UpdatePlanItemRequest = testerlib.UpdatePlanItemRequest;
-const CreatePlanItemRequest = testerlib.CreatePlanItemRequest;
 const CreatePlanRequest = testerlib.CreatePlanRequest;
+const UpdatePlanRequest = testerlib.UpdatePlanRequest;
+const GetPlanItemResponse = testerlib.GetPlanItemResponse;
+const CreatePlanItemRequest = testerlib.CreatePlanItemRequest;
 const ListPlansResponse = testerlib.ListPlansResponse;
+const UpdateMetadataRequest = testerlib.UpdateMetadataRequest;
+const UpdatePlanItemRequest = testerlib.UpdatePlanItemRequest;
 
 describe("PlansController Tests", function tests() {
     this.timeout(testConfiguration.TEST_TIMEOUT);

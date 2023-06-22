@@ -16,17 +16,17 @@ const baseController = require("../../lib/Controllers/BaseController");
 
 const controller = testerlib.ChargesController;
 const GetChargeResponse = testerlib.GetChargeResponse;
-const UpdateMetadataRequest = testerlib.UpdateMetadataRequest;
 const CreateCaptureChargeRequest = testerlib.CreateCaptureChargeRequest;
-const UpdateChargePaymentMethodRequest = testerlib.UpdateChargePaymentMethodRequest;
 const ListChargeTransactionsResponse = testerlib.ListChargeTransactionsResponse;
-const UpdateChargeDueDateRequest = testerlib.UpdateChargeDueDateRequest;
 const ListChargesResponse = testerlib.ListChargesResponse;
+const UpdateChargePaymentMethodRequest = testerlib.UpdateChargePaymentMethodRequest;
+const UpdateChargeDueDateRequest = testerlib.UpdateChargeDueDateRequest;
+const CreateConfirmPaymentRequest = testerlib.CreateConfirmPaymentRequest;
+const UpdateMetadataRequest = testerlib.UpdateMetadataRequest;
 const UpdateChargeCardRequest = testerlib.UpdateChargeCardRequest;
 const CreateCancelChargeRequest = testerlib.CreateCancelChargeRequest;
 const GetChargesSummaryResponse = testerlib.GetChargesSummaryResponse;
 const CreateChargeRequest = testerlib.CreateChargeRequest;
-const CreateConfirmPaymentRequest = testerlib.CreateConfirmPaymentRequest;
 
 describe("ChargesController Tests", function tests() {
     this.timeout(testConfiguration.TEST_TIMEOUT);
